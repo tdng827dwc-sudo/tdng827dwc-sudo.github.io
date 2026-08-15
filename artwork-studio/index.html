@@ -2,7 +2,7 @@
 <html lang="sk">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Profabrix AI Artwork Studio v3.9.2</title>
+<title>Profabrix AI Artwork Studio v3.9.3</title>
 <style>
 :root{--bg:#080b10;--panel:#11151d;--line:rgba(255,255,255,.08);--text:#f6f7fb;--muted:#9ca7b8;--blue:#4f7cff;--pink:#ff4ea3;--red:#ff4b4b;--violet:#8c63ff;--cyan:#57d7ff;--orange:#ff7a33;--green:#40d99a;--yellow:#ffd65a}
 *{box-sizing:border-box}html,body{margin:0;background:radial-gradient(circle at 18% 0%,rgba(71,111,255,.12),transparent 24%),radial-gradient(circle at 88% 8%,rgba(255,78,163,.11),transparent 26%),linear-gradient(180deg,#0a0d12,#06080c 65%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100vh}.app{max-width:1560px;margin:0 auto;padding:16px}
@@ -213,7 +213,7 @@ body.easy .generateBtn{box-shadow:0 18px 46px rgba(109,85,255,.22)}
 @media(max-width:900px){.resultLayout{grid-template-columns:1fr}.resultPreview{min-height:340px}.artworkGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.referenceInfo{min-width:100%}.referenceActions{width:100%}.referenceBtn{flex:1}.stateRail{gap:3px}.stateStep{padding:7px 5px}.stateStep small{display:none}.readyGrid{grid-template-columns:1fr}.previewFlowBtn{width:100%}.preflightList{grid-template-columns:1fr 1fr}.resultPreview{min-height:300px}.variationsGrid{grid-template-columns:1fr 1fr}.exportGrid{grid-template-columns:1fr}.artworkGrid{grid-template-columns:1fr}.artworksShell{padding:10px}.generationHead{flex-direction:column}.engineBadge{align-self:flex-start}}
 
-/* v3.9.2 — iPhone workflow CTA and safe-area repair */
+/* v3.9.3 — iPhone workflow CTA and safe-area repair */
 .localFileHint{display:none;margin:0 0 8px;padding:10px 12px;border:1px solid rgba(87,215,255,.2);border-radius:14px;background:linear-gradient(120deg,rgba(79,124,255,.11),rgba(87,215,255,.06));align-items:center;justify-content:space-between;gap:10px;color:#aebaca;font-size:10px;line-height:1.4}.localFileHint b{color:#eef5ff}.localFileHint a{flex-shrink:0;border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:9px 10px;background:#0c1420;color:#fff;text-decoration:none;font-weight:750}body.iosLocalFile .localFileHint{display:flex}
 @media(max-width:760px){
   html{scroll-padding-bottom:calc(196px + env(safe-area-inset-bottom,0px))}
@@ -256,12 +256,12 @@ body.easy .generateBtn{box-shadow:0 18px 46px rgba(109,85,255,.22)}
 <body class="pro">
 <div class="app">
 <div id="localFileHint" class="localFileHint"><div><b>iPhone zobrazuje stiahnutý HTML súbor v náhľade.</b><br>Horný názov súboru, krížik a ikona zdieľania nie sú súčasťou aplikácie. Online verzia otvorená priamo v Safari tento vonkajší rám nemá.</div></div>
-<header class="top"><div class="brand"><div class="logo">P</div><div><h1>PROFABRIX</h1><small>AI ARTWORK STUDIO</small></div></div><nav class="nav"><button id="navStudio" class="active">Studio</button><button id="navLibrary">Prompt Library</button><button id="navArtworks">My Artworks</button><button id="navGuide">Print Guide</button></nav><div class="topActions"><span class="pill">Free • API Off</span><span class="pill">v3.9.2</span></div></header>
+<header class="top"><div class="brand"><div class="logo">P</div><div><h1>PROFABRIX</h1><small>AI ARTWORK STUDIO</small></div></div><nav class="nav"><button id="navStudio" class="active">Studio</button><button id="navLibrary">Prompt Library</button><button id="navArtworks">My Artworks</button><button id="navGuide">Print Guide</button></nav><div class="topActions"><span class="pill">Free • API Off</span><span class="pill">v3.9.3</span></div></header>
 <div id="studioView" class="view active"><div class="workspace">
 <aside class="glass left"><div class="modeSwitch"><button id="easyBtn">EASY</button><button id="proBtn" class="active">PRO</button></div><div class="easySummary"><h4>EASY MODE</h4><p>1. Nahraj foto → 2. vyber štýl → 3. farbu trička → 4. Preview Flow. Technické parametre nastaví profil automaticky.</p></div><div class="flowTitle">WORKFLOW</div><div class="flow">
 <div class="step s1"><div class="node">↑</div><small>1</small><b>UPLOAD</b><p>Nahraj svoju fotku</p></div><div class="step s2"><div class="node">✦</div><small>2</small><b>STYLE</b><p>Vyber vizuálny smer</p></div><div class="step s3"><div class="node">▣</div><small>3</small><b>PRINT MODE</b><p>Zvoľ technológiu tlače</p></div><div class="step s4"><div class="node">◉</div><small>4</small><b>GARMENT</b><p>Farba textilu a knockout</p></div><div class="step s5"><div class="node">≡</div><small>5</small><b>EFFECTS</b><p>Detaily, efekty, identity lock</p></div><div class="step s6"><div class="node">↓</div><small>6</small><b>EXPORT</b><p>Priprav výstup na tlač</p></div>
 </div></aside>
-<main class="center"><section class="heroCard"><div class="heroGlow"></div><div class="heroTop"><h2>ARTWORK PREVIEW</h2><div class="badges"><span class="badge">A2 • 300 DPI</span><span class="badge">PNG TRANSPARENT</span><span class="badge">DTG BREATHABLE</span></div></div><div class="previewWrap"><label class="uploadBox" for="fileInput"><input id="fileInput" type="file" accept="image/*" multiple hidden><img id="uploadPreview"><div id="uploadEmpty" class="uploadEmpty"><div style="font-size:32px">☁</div><b>UPLOAD PRIMARY PHOTO</b><small>Vyber 1 foto alebo celý reference pack</small></div></label><div id="artPreview" class="artPreview"><div id="previewOverlay"></div><div class="fakeSubject"></div><div class="liveLabel">LIVE STYLE PREVIEW</div><div id="previewCaption" class="caption">Cinematic Neon Supercar</div></div></div><div class="referenceBar"><div class="referenceInfo"><span style="font-size:19px">◎</span><div><b>IDENTITY REFERENCE PACK</b><small>Prvá fotka = hlavná, potom maximálne 8 najsilnejších referencií identity.</small></div></div><div id="referenceThumbs" class="referenceThumbs"></div><span id="referenceCount" class="referenceCount">0 refs</span><div class="referenceActions"><button id="addRefsBtn" class="referenceBtn">+ Pridať refs</button><button id="clearRefsBtn" class="referenceBtn subtle">Vyčistiť</button><input id="referenceInput" type="file" accept="image/*" multiple hidden></div><div class="privacyLine">⌁ Fotografie vo V3.9.2 ostávajú iba v tomto prehliadači; nikam sa neposielajú.</div></div><div class="gradientStrip"><h3>Signature Presets</h3><div class="presets">
+<main class="center"><section class="heroCard"><div class="heroGlow"></div><div class="heroTop"><h2>ARTWORK PREVIEW</h2><div class="badges"><span class="badge">A2 • 300 DPI</span><span class="badge">PNG TRANSPARENT</span><span class="badge">DTG BREATHABLE</span></div></div><div class="previewWrap"><label class="uploadBox" for="fileInput"><input id="fileInput" type="file" accept="image/*" multiple hidden><img id="uploadPreview"><div id="uploadEmpty" class="uploadEmpty"><div style="font-size:32px">☁</div><b>UPLOAD PRIMARY PHOTO</b><small>Vyber 1 foto alebo celý reference pack</small></div></label><div id="artPreview" class="artPreview"><div id="previewOverlay"></div><div class="fakeSubject"></div><div class="liveLabel">LIVE STYLE PREVIEW</div><div id="previewCaption" class="caption">Cinematic Neon Supercar</div></div></div><div class="referenceBar"><div class="referenceInfo"><span style="font-size:19px">◎</span><div><b>IDENTITY REFERENCE PACK</b><small>Prvá fotka = hlavná, potom maximálne 8 najsilnejších referencií identity.</small></div></div><div id="referenceThumbs" class="referenceThumbs"></div><span id="referenceCount" class="referenceCount">0 refs</span><div class="referenceActions"><button id="addRefsBtn" class="referenceBtn">+ Pridať refs</button><button id="clearRefsBtn" class="referenceBtn subtle">Vyčistiť</button><input id="referenceInput" type="file" accept="image/*" multiple hidden></div><div class="privacyLine">⌁ Fotografie vo V3.9.3 ostávajú iba v tomto prehliadači; nikam sa neposielajú.</div></div><div class="gradientStrip"><h3>Signature Presets</h3><div class="presets">
 <div class="preset" data-profile="rapboot"><span>90s Rap</span></div>
 <div class="preset" data-profile="sportsicon"><span>Sports Icon</span></div>
 <div class="preset" data-profile="popdiva"><span>Pop Diva</span></div>
@@ -275,7 +275,7 @@ body.easy .generateBtn{box-shadow:0 18px 46px rgba(109,85,255,.22)}
 <div class="styleDNA"><div class="dnaCard"><b>STYLE DNA</b><p id="dnaDesc">Cinematic neon automotive editorial.</p></div><div class="dnaStats"><div class="dnaStat"><small>BEST FOR</small><strong id="dnaBest">Poster / WOW</strong></div><div class="dnaStat"><small>MASTER</small><strong id="dnaOutput">A2 / 300 DPI</strong></div></div></div>
 </div></section>
 <section id="generationCard" class="glass generationCard" data-state="ready">
-  <div class="generationHead"><div><h3>ARTWORK GENERATION WORKFLOW</h3><p>Kompletný V3.9.2 stavový model bez plateného API. Lokálny náhľad testuje celý proces, ale nie je vydávaný za hotový AI artwork.</p></div><span class="engineBadge">LOCAL PROTOTYPE • €0</span></div>
+  <div class="generationHead"><div><h3>ARTWORK GENERATION WORKFLOW</h3><p>Kompletný V3.9.3 stavový model bez plateného API. Lokálny náhľad testuje celý proces, ale nie je vydávaný za hotový AI artwork.</p></div><span class="engineBadge">LOCAL PROTOTYPE • €0</span></div>
   <div id="stateRail" class="stateRail">
     <div class="stateStep active" data-flow-step="ready"><small>01</small><b>Ready</b></div><div class="stateStep" data-flow-step="generating"><small>02</small><b>Generating</b></div><div class="stateStep" data-flow-step="result"><small>03</small><b>Result</b></div><div class="stateStep" data-flow-step="variations"><small>04</small><b>Variations</b></div><div class="stateStep" data-flow-step="export"><small>05</small><b>Export</b></div>
   </div>
@@ -333,7 +333,7 @@ body.easy .generateBtn{box-shadow:0 18px 46px rgba(109,85,255,.22)}
 </section>
 
 <section id="artworksView" class="view glass artworksShell">
-  <div class="artworksTop"><div><h2>My Artworks</h2><p>Lokálne uložené artwork jobs, prompty a nastavenia. V3.9.2 neukladá fotografie do cloudu.</p><span class="localOnlyBadge">● This device only</span></div><button id="clearArtworksBtn" class="dangerBtn">Clear local artworks</button></div>
+  <div class="artworksTop"><div><h2>My Artworks</h2><p>Lokálne uložené artwork jobs, prompty a nastavenia. V3.9.3 neukladá fotografie do cloudu.</p><span class="localOnlyBadge">● This device only</span></div><button id="clearArtworksBtn" class="dangerBtn">Clear local artworks</button></div>
   <div id="artworkGrid" class="artworkGrid"></div>
 </section>
 
@@ -493,10 +493,9 @@ let pm="breath",gar="BLACK",sz="A2";
 
 function updateProfileSummary(){
   const p=PROFILES[activeProfile];
-  if(!p)return;
-  activeProfileName.textContent=p.name;
-  activeProfileDesc.textContent=p.description;
   const modeLabel=pm==="poster"?"PHOTO / POSTER":pm==="solid"?"DTF / DTG SOLID":"DTG BREATHABLE";
+  activeProfileName.textContent=p?p.name:"Custom settings";
+  activeProfileDesc.textContent=p?p.description:"Manual configuration";
   profilePills.innerHTML=[
     modeLabel,
     garmentValue(),
@@ -504,6 +503,11 @@ function updateProfileSummary(){
     ratio.value,
     identity.value==3?"ID MAX":identity.value==2?"ID STRONG":"ID SOFT"
   ].map(v=>`<span class="profilePill">${escapeHtml(v)}</span>`).join("");
+}
+function clearActiveProfile(){
+  activeProfile="";
+  document.querySelectorAll(".preset").forEach(el=>el.classList.remove("presetApplied"));
+  updateProfileSummary();
 }
 function toastProfile(message){
   profileToastText.textContent=message;
@@ -535,7 +539,7 @@ function applyProfile(key, announce=true){
 }
 
 function mark(group,value){document.querySelectorAll(group).forEach(el=>el.classList.toggle("active",el.dataset.v===value))}
-document.querySelectorAll(".pm").forEach(el=>el.onclick=()=>{pm=el.dataset.v;mark(".pm",pm);activeProfile="";updateProfileSummary();generatePrompt()});document.querySelectorAll(".swatch").forEach(el=>el.onclick=()=>{gar=el.dataset.v;mark(".swatch",gar);customGarment.style.display=gar==="CUSTOM"?"block":"none";activeProfile="";if(document.body.classList.contains("easy")&&easyGoal==="tee"){applyEasyGoal("tee",false)}else{updateProfileSummary();updateVisualPreview();generatePrompt()}updateEasyAutoSummary()});document.querySelectorAll(".sz").forEach(el=>el.onclick=()=>{sz=el.dataset.v;mark(".sz",sz);activeProfile="";updateProfileSummary();updateVisualPreview();generatePrompt()});document.querySelectorAll(".preset").forEach(el=>{
+document.querySelectorAll(".pm").forEach(el=>el.onclick=()=>{pm=el.dataset.v;mark(".pm",pm);clearActiveProfile();generatePrompt()});document.querySelectorAll(".swatch").forEach(el=>el.onclick=()=>{gar=el.dataset.v;mark(".swatch",gar);customGarment.style.display=gar==="CUSTOM"?"block":"none";clearActiveProfile();if(document.body.classList.contains("easy")&&easyGoal==="tee"){applyEasyGoal("tee",false)}else{updateProfileSummary();updateVisualPreview();generatePrompt()}updateEasyAutoSummary()});document.querySelectorAll(".sz").forEach(el=>el.onclick=()=>{sz=el.dataset.v;mark(".sz",sz);clearActiveProfile();updateVisualPreview();generatePrompt()});document.querySelectorAll(".preset").forEach(el=>{
   const key=el.dataset.profile;
   el.insertAdjacentHTML("afterbegin",thumbSVG(key));
   el.onclick=()=>applyProfile(key);
@@ -550,10 +554,11 @@ function setStudioMode(mode,persist=true){
 }
 easyBtn.onclick=()=>setStudioMode("easy");
 proBtn.onclick=()=>setStudioMode("pro");
-identity.oninput=()=>{identityLabel.textContent=identity.value==3?"MAX":identity.value==2?"STRONG":"SOFT";activeProfile="";updateProfileSummary();generatePrompt()};
-ratio.onchange=()=>{activeProfile="";updateProfileSummary();updateVisualPreview();generatePrompt()};
-style.onchange=()=>{activeProfile="";updateProfileSummary();updateVisualPreview();generatePrompt()};
-customGarment.oninput=()=>{updateProfileSummary();generatePrompt()};
+identity.oninput=()=>{identityLabel.textContent=identity.value==3?"MAX":identity.value==2?"STRONG":"SOFT";clearActiveProfile();generatePrompt()};
+ratio.onchange=()=>{clearActiveProfile();updateVisualPreview();generatePrompt()};
+style.onchange=()=>{clearActiveProfile();updateVisualPreview();generatePrompt()};
+customGarment.oninput=()=>{clearActiveProfile();generatePrompt()};
+[transparent,knockout,breathable,easyQuality].forEach(el=>el.addEventListener("change",()=>{clearActiveProfile();updateEasyAutoSummary();generatePrompt()}));
 fileInput.onchange=e=>{
   const f=e.target.files[0];if(!f)return;
   window.uploadedPhotoUrl=URL.createObjectURL(f);
@@ -577,7 +582,7 @@ function generatePrompt(){promptEl.value=`EDIT THE UPLOADED PHOTO — DO NOT CRE
 Treat knockout, breathable raster, halftone and reduced-underbase instructions as artwork intent. Final white-underbase generation, ink limits, separations, screening and printer-specific output remain the responsibility of the RIP / production workflow.
 
 QUALITY GUARDRAILS:\nNatural skin texture. Realistic anatomy. Correct hands and fingers. No duplicate limbs. No facial warping. No plastic skin. No random gibberish. No cheap CGI appearance. Keep the subject visually dominant and compositionally clean. Do not copy existing copyrighted artwork, exact compositions, third-party logos, league/team marks, brand trademarks or watermarks.`;status.textContent="Prompt generated."}
-generateBtn.onclick=generatePrompt;copyBtn.onclick=async()=>{try{await navigator.clipboard.writeText(promptEl.value)}catch(e){promptEl.select();document.execCommand("copy")}status.textContent="Prompt copied."};downloadBtn.onclick=()=>{const blob=new Blob([promptEl.value],{type:"text/plain;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="profabrix-artwork-prompt-v392.txt";a.click();URL.revokeObjectURL(a.href)};saveBtn.onclick=()=>{const items=JSON.parse(localStorage.getItem("profabrixPromptLibrary")||"[]");items.unshift({date:new Date().toISOString(),style:style.options[style.selectedIndex].text,profile:activeProfile||null,printMode:pm,garment:garmentValue(),size:sz,ratio:ratio.value,prompt:promptEl.value});localStorage.setItem("profabrixPromptLibrary",JSON.stringify(items.slice(0,100)));status.textContent="Saved locally to library."};chatBtn.onclick=async()=>{try{await navigator.clipboard.writeText(promptEl.value)}catch(e){}status.textContent="Prompt copied. Add your photo in ChatGPT and paste.";window.open("https://chatgpt.com/","_blank")};
+generateBtn.onclick=generatePrompt;copyBtn.onclick=async()=>{try{await navigator.clipboard.writeText(promptEl.value)}catch(e){promptEl.select();document.execCommand("copy")}status.textContent="Prompt copied."};downloadBtn.onclick=()=>{const blob=new Blob([promptEl.value],{type:"text/plain;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="profabrix-artwork-prompt-v393.txt";a.click();URL.revokeObjectURL(a.href)};saveBtn.onclick=()=>{const items=JSON.parse(localStorage.getItem("profabrixPromptLibrary")||"[]");items.unshift({date:new Date().toISOString(),style:style.options[style.selectedIndex].text,profile:activeProfile||null,printMode:pm,garment:garmentValue(),size:sz,ratio:ratio.value,prompt:promptEl.value});localStorage.setItem("profabrixPromptLibrary",JSON.stringify(items.slice(0,100)));status.textContent="Saved locally to library."};chatBtn.onclick=async()=>{try{await navigator.clipboard.writeText(promptEl.value)}catch(e){}status.textContent="Prompt copied. Add your photo in ChatGPT and paste.";window.open("https://chatgpt.com/","_blank")};
 
 let easyGoal="tee";
 
@@ -631,6 +636,7 @@ document.querySelectorAll(".easyGoal").forEach(b=>b.onclick=()=>applyEasyGoal(b.
 
 function useGuideMode(mode){
   setStudioMode("pro");
+  clearActiveProfile();
   pm=mode;mark(".pm",pm);
   if(mode==="poster"){transparent.checked=false;knockout.checked=false;breathable.checked=false;bgv="replace";}
   if(mode==="solid"){transparent.checked=true;knockout.checked=gar!=="WHITE";breathable.checked=false;bgv="transparent";}
@@ -640,7 +646,7 @@ function useGuideMode(mode){
 }
 document.querySelectorAll("[data-guide-mode]").forEach(b=>b.onclick=()=>useGuideMode(b.dataset.guideMode));
 document.querySelectorAll("[data-guide-size]").forEach(b=>b.onclick=()=>{
-  sz=b.dataset.guideSize;mark(".sz",sz);updateProfileSummary();updateVisualPreview();generatePrompt();showView("studio");setDockActive(dockStudio);toastProfile("Master size: "+sz);
+  clearActiveProfile();sz=b.dataset.guideSize;mark(".sz",sz);updateProfileSummary();updateVisualPreview();generatePrompt();showView("studio");setDockActive(dockStudio);toastProfile("Master size: "+sz);
 });
 guideBackStudio.onclick=()=>{showView("studio");setDockActive(dockStudio)};
 guideEasyBtn.onclick=()=>{
@@ -753,7 +759,7 @@ let selectedCompare=[];let modalStyleKey="neon";
 function profileForStyle(key){return PROFILES[key]||{name:(STYLE_META[key]||{}).name||key,printMode:"poster",garment:"WHITE",size:"A2",ratio:"4:5 portrait",identity:3,background:"replace",transparent:false,knockout:false,breathable:false}}
 function printModeLabel(v){return v==="breath"?"DTG BREATHABLE":v==="solid"?"DTF / DTG SOLID":"PHOTO / POSTER"}
 function openStyleDetail(key){const m=STYLE_META[key];if(!m)return;const p=profileForStyle(key);modalStyleKey=key;modalHero.style.background=m.grad;modalHeroSvg.innerHTML=thumbSVG(key);modalTitle.textContent=m.name;modalDesc.textContent=m.desc;modalTags.innerHTML=m.tags.map(t=>`<span class="miniTag">${t}</span>`).join("");modalPrint.textContent=printModeLabel(p.printMode);modalGarment.textContent=p.garment;modalRatio.textContent=p.ratio;modalIdentity.textContent=p.identity===3?"MAX":p.identity===2?"STRONG":"SOFT";modalCompare.textContent=selectedCompare.includes(key)?"✓ In Compare":"+ Compare";styleModalBackdrop.classList.add("show")}
-function closeStyleDetail(){styleModalBackdrop.classList.remove("show")}modalClose.onclick=closeStyleDetail;styleModalBackdrop.onclick=e=>{if(e.target===styleModalBackdrop)closeStyleDetail()};modalUse.onclick=()=>{closeStyleDetail();showView("studio");if(PROFILES[modalStyleKey])applyProfile(modalStyleKey);else{style.value=modalStyleKey;activeProfile="";updateProfileSummary();updateVisualPreview();generatePrompt()}};modalCompare.onclick=()=>{toggleCompare(modalStyleKey);modalCompare.textContent=selectedCompare.includes(modalStyleKey)?"✓ In Compare":"+ Compare"};
+function closeStyleDetail(){styleModalBackdrop.classList.remove("show")}modalClose.onclick=closeStyleDetail;styleModalBackdrop.onclick=e=>{if(e.target===styleModalBackdrop)closeStyleDetail()};modalUse.onclick=()=>{closeStyleDetail();showView("studio");if(PROFILES[modalStyleKey])applyProfile(modalStyleKey);else{style.value=modalStyleKey;clearActiveProfile();updateVisualPreview();generatePrompt()}};modalCompare.onclick=()=>{toggleCompare(modalStyleKey);modalCompare.textContent=selectedCompare.includes(modalStyleKey)?"✓ In Compare":"+ Compare"};
 function toggleCompare(key){if(selectedCompare.includes(key))selectedCompare=selectedCompare.filter(k=>k!==key);else{if(selectedCompare.length>=3){toastProfile("Compare supports maximum 3 styles.");return}selectedCompare.push(key)}renderCompareTray();if(libraryView.classList.contains("active"))renderStyleLibrary(librarySearch.value)}
 function renderCompareTray(){compareItems.innerHTML=selectedCompare.map(k=>`<span class="compareChip">${STYLE_META[k].name}<button data-remove="${k}">×</button></span>`).join("");compareItems.querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>toggleCompare(b.dataset.remove));compareTray.classList.toggle("show",selectedCompare.length>0)}clearCompare.onclick=()=>{selectedCompare=[];renderCompareTray();renderStyleLibrary(librarySearch.value)};openCompare.onclick=()=>{if(selectedCompare.length<2){toastProfile("Vyber aspoň 2 štýly na porovnanie.");return}compareView.innerHTML=selectedCompare.map(k=>{const m=STYLE_META[k],p=profileForStyle(k),th=PREVIEW_THEMES[k]||PREVIEW_THEMES.clean;return `<div class="compareCol"><div class="compareVisual" style="--grad:${m.grad};background:${m.grad}">${thumbSVG(k)}</div><div class="compareContent"><h3>${m.name}</h3><div class="compareRow"><span>Best for</span><b>${th.best}</b></div><div class="compareRow"><span>Print mode</span><b>${printModeLabel(p.printMode)}</b></div><div class="compareRow"><span>Garment</span><b>${p.garment}</b></div><div class="compareRow"><span>Ratio</span><b>${p.ratio}</b></div><div class="compareRow"><span>Identity</span><b>${p.identity===3?"MAX":"STRONG"}</b></div><button class="action primary" style="width:100%;margin-top:8px" data-use-compare="${k}">Použiť tento</button></div></div>`}).join("");compareView.querySelectorAll("[data-use-compare]").forEach(b=>b.onclick=()=>{const k=b.dataset.useCompare;compareModalBackdrop.classList.remove("show");showView("studio");if(PROFILES[k])applyProfile(k);else{style.value=k;updateVisualPreview();generatePrompt()}});compareModalBackdrop.classList.add("show")};compareClose.onclick=()=>compareModalBackdrop.classList.remove("show");compareModalBackdrop.onclick=e=>{if(e.target===compareModalBackdrop)compareModalBackdrop.classList.remove("show")};
 function scrollToPrompt(){showView("studio");document.querySelector(".promptCard").scrollIntoView({behavior:"smooth",block:"start"})}
@@ -803,7 +809,7 @@ function renderStyleLibrary(query=""){
     };
     card.querySelector('[data-action="compare"]') .onclick=(e)=>{e.stopPropagation();toggleCompare(key);};
     card.querySelector('[data-action="use"]').onclick=(e)=>{
-      e.stopPropagation();showView("studio");if(PROFILES[key]){applyProfile(key);status.textContent=`Profile loaded: ${m.name}`;}else{style.value=key;activeProfile="";updateProfileSummary();generatePrompt();status.textContent=`Loaded: ${m.name}`;}
+      e.stopPropagation();showView("studio");if(PROFILES[key]){applyProfile(key);status.textContent=`Profile loaded: ${m.name}`;}else{style.value=key;clearActiveProfile();generatePrompt();status.textContent=`Loaded: ${m.name}`;}
     };
     card.onclick=()=>openStyleDetail(key);
     styleGrid.appendChild(card);
@@ -1021,12 +1027,12 @@ function openExportStage(){if(!currentArtworkJob)return;setFlowState("export")}
 function cleanJobForDownload(job){
   if(!job)return null;
   const {thumb,...rest}=job;
-  return {...rest,engine:"prototype-local-v3.9.2",source:{primaryFile:job.primaryName,referenceCount:job.referenceCount,imagesEmbedded:false},productionNote:"Final white underbase, separations, screening, ink limits and printer calibration remain RIP responsibilities."};
+  return {...rest,engine:"prototype-local-v3.9.3",source:{primaryFile:job.primaryName,referenceCount:job.referenceCount,imagesEmbedded:false},productionNote:"Final white underbase, separations, screening, ink limits and printer calibration remain RIP responsibilities."};
 }
 function downloadData(filename,content,type="text/plain;charset=utf-8"){
   const blob=new Blob([content],{type});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
-function downloadArtworkBrief(job=currentArtworkJob){if(!job)return;downloadData(`profabrix-${job.styleKey||"artwork"}-brief-v392.json`,JSON.stringify(cleanJobForDownload(job),null,2),"application/json;charset=utf-8");status.textContent="Artwork brief downloaded."}
+function downloadArtworkBrief(job=currentArtworkJob){if(!job)return;downloadData(`profabrix-${job.styleKey||"artwork"}-brief-v393.json`,JSON.stringify(cleanJobForDownload(job),null,2),"application/json;charset=utf-8");status.textContent="Artwork brief downloaded."}
 function downloadArtworkPrompt(job=currentArtworkJob){if(!job)return;downloadData(`profabrix-${job.styleKey||"artwork"}-prompt.txt`,job.prompt||promptEl.value);status.textContent="Production prompt downloaded."}
 
 function getArtworkJobs(){try{return JSON.parse(localStorage.getItem(ARTWORK_STORAGE_KEY)||"[]")}catch(e){return[]}}
