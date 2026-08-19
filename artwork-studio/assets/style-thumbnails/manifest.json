@@ -1,34 +1,25 @@
 {
-  "version": "canonical-v1",
-  "source": {
-    "primary": "Board 2",
-    "fallback": "Board 1 per-style only",
-    "rejected": "Board 3"
-  },
-  "board": {
-    "file": "assets/canonical-board-2.webp",
-    "sourceSize": [1536, 1024],
-    "deployedSize": [768, 512],
-    "scale": 0.5
-  },
-  "styles": [
-    {"key":"rapboot","assetName":"01-90s-rap-bootleg.png","cropFullRes":{"x":13,"y":38,"w":261,"h":278}},
-    {"key":"sportsicon","assetName":"02-rewind-sports-icon.png","cropFullRes":{"x":285,"y":38,"w":256,"h":278}},
-    {"key":"popdiva","assetName":"03-pop-diva-bootleg.png","cropFullRes":{"x":548,"y":38,"w":251,"h":278}},
-    {"key":"traplux","assetName":"04-luxury-trap-cover-art.png","cropFullRes":{"x":806,"y":38,"w":253,"h":278}},
-    {"key":"sportswear","assetName":"05-global-sportswear-campaign.png","cropFullRes":{"x":1064,"y":38,"w":227,"h":278}},
-    {"key":"fashion","assetName":"06-luxury-fashion-editorial.png","cropFullRes":{"x":1298,"y":38,"w":227,"h":278}},
-    {"key":"neon","assetName":"07-cinematic-neon-supercar.png","cropFullRes":{"x":13,"y":374,"w":261,"h":262}},
-    {"key":"motorsport","assetName":"08-retro-motorsport-hero.png","cropFullRes":{"x":285,"y":374,"w":256,"h":262}},
-    {"key":"comic","assetName":"09-comic-chaos-deluxe.png","cropFullRes":{"x":548,"y":374,"w":251,"h":262}},
-    {"key":"cyber","assetName":"10-cyberpunk-glitch-icon.png","cropFullRes":{"x":806,"y":374,"w":253,"h":262}},
-    {"key":"graffiti","assetName":"11-street-graffiti-collage.png","cropFullRes":{"x":1064,"y":374,"w":227,"h":262}},
-    {"key":"y2k","assetName":"12-y2k-fame-paparazzi-poster.png","cropFullRes":{"x":1298,"y":374,"w":227,"h":262}},
-    {"key":"watercolor","assetName":"13-watercolor.png","cropFullRes":{"x":13,"y":709,"w":261,"h":257}},
-    {"key":"sketch","assetName":"14-sketch-line.png","cropFullRes":{"x":285,"y":709,"w":256,"h":257}},
-    {"key":"paintsplash","assetName":"15-paint-splash.png","cropFullRes":{"x":548,"y":709,"w":251,"h":257}},
-    {"key":"vector","assetName":"16-minimal-vector.png","cropFullRes":{"x":806,"y":709,"w":253,"h":257}},
-    {"key":"halftone","assetName":"17-halftone-pop.png","cropFullRes":{"x":1064,"y":709,"w":227,"h":257}},
-    {"key":"clean","assetName":"18-clean-retouch.png","cropFullRes":{"x":1298,"y":709,"w":227,"h":257}}
+  "version":"canonical-v1",
+  "source":{"primary":"Board 2","fallback":"Board 1 per-style only","rejected":"Board 3"},
+  "board":{"file":"../canonical-board-2.webp","sourceSize":[1536,1024],"deployedSize":[768,512],"scale":0.5},
+  "styles":[
+    {"key":"rapboot","assetFile":"01-90s-rap-bootleg.svg","exportName":"01-90s-rap-bootleg.png","cropFullRes":{"x":13,"y":38,"w":261,"h":278}},
+    {"key":"sportsicon","assetFile":"02-rewind-sports-icon.svg","exportName":"02-rewind-sports-icon.png","cropFullRes":{"x":285,"y":38,"w":256,"h":278}},
+    {"key":"popdiva","assetFile":"03-pop-diva-bootleg.svg","exportName":"03-pop-diva-bootleg.png","cropFullRes":{"x":548,"y":38,"w":251,"h":278}},
+    {"key":"traplux","assetFile":"04-luxury-trap-cover-art.svg","exportName":"04-luxury-trap-cover-art.png","cropFullRes":{"x":806,"y":38,"w":253,"h":278}},
+    {"key":"sportswear","assetFile":"05-global-sportswear-campaign.svg","exportName":"05-global-sportswear-campaign.png","cropFullRes":{"x":1064,"y":38,"w":227,"h":278}},
+    {"key":"fashion","assetFile":"06-luxury-fashion-editorial.svg","exportName":"06-luxury-fashion-editorial.png","cropFullRes":{"x":1298,"y":38,"w":227,"h":278}},
+    {"key":"neon","assetFile":"07-cinematic-neon-supercar.svg","exportName":"07-cinematic-neon-supercar.png","cropFullRes":{"x":13,"y":374,"w":261,"h":262}},
+    {"key":"motorsport","assetFile":"08-retro-motorsport-hero.svg","exportName":"08-retro-motorsport-hero.png","cropFullRes":{"x":285,"y":374,"w":256,"h":262}},
+    {"key":"comic","assetFile":"09-comic-chaos-deluxe.svg","exportName":"09-comic-chaos-deluxe.png","cropFullRes":{"x":548,"y":374,"w":251,"h":262}},
+    {"key":"cyber","assetFile":"10-cyberpunk-glitch-icon.svg","exportName":"10-cyberpunk-glitch-icon.png","cropFullRes":{"x":806,"y":374,"w":253,"h":262}},
+    {"key":"graffiti","assetFile":"11-street-graffiti-collage.svg","exportName":"11-street-graffiti-collage.png","cropFullRes":{"x":1064,"y":374,"w":227,"h":262}},
+    {"key":"y2k","assetFile":"12-y2k-fame-paparazzi-poster.svg","exportName":"12-y2k-fame-paparazzi-poster.png","cropFullRes":{"x":1298,"y":374,"w":227,"h":262}},
+    {"key":"watercolor","assetFile":"13-watercolor.svg","exportName":"13-watercolor.png","cropFullRes":{"x":13,"y":709,"w":261,"h":257}},
+    {"key":"sketch","assetFile":"14-sketch-line.svg","exportName":"14-sketch-line.png","cropFullRes":{"x":285,"y":709,"w":256,"h":257}},
+    {"key":"paintsplash","assetFile":"15-paint-splash.svg","exportName":"15-paint-splash.png","cropFullRes":{"x":548,"y":709,"w":251,"h":257}},
+    {"key":"vector","assetFile":"16-minimal-vector.svg","exportName":"16-minimal-vector.png","cropFullRes":{"x":806,"y":709,"w":253,"h":257}},
+    {"key":"halftone","assetFile":"17-halftone-pop.svg","exportName":"17-halftone-pop.png","cropFullRes":{"x":1064,"y":709,"w":227,"h":257}},
+    {"key":"clean","assetFile":"18-clean-retouch.svg","exportName":"18-clean-retouch.png","cropFullRes":{"x":1298,"y":709,"w":227,"h":257}}
   ]
 }
