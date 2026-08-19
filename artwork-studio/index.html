@@ -15,10 +15,10 @@ html,body{margin:0;min-height:100%;background:#080b10;color:#f6f7fb;font-family:
 <script>
 (async function(){
   try{
-    const r=await fetch("./core-v393.html?v=canonical-1",{cache:"no-cache"});
+    const r=await fetch("./core-v393.html?v=canonical-2",{cache:"no-cache"});
     if(!r.ok) throw new Error("core "+r.status);
     let html=await r.text();
-    const inject='<script src="./canonical-thumbnails.js?v=canonical-1"><\\/script>';
+    const inject='<script src="./canonical-thumbnails.js?v=canonical-2"><\/script>';
     if(!html.includes("</body>")) throw new Error("invalid core");
     html=html.replace("</body>",inject+"</body>");
     document.open();
